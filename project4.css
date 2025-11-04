@@ -1,0 +1,424 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    background-color: #020617;
+}
+
+.background{
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background-color: #020617;
+    background-image: 
+    linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    background-size: 24px 24px, 24px 24px, 100% 100%;
+}
+
+.navbar .nav-link{
+    color: white !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover{
+    color: #a78bfa !important;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.navbar-left img:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between !important;
+    padding: 20px !important;
+    margin-right: 50px !important;
+}
+
+.container2{
+    z-index: 1;
+    position: relative;
+    color: gainsboro;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.container2 h6{
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.container2 h1{
+    font-size: 64px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #968bfa, rgb(228, 11, 210));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(60px);
+    animation: moving .5s linear forwards;
+}
+
+@keyframes moving{
+    50%{
+        opacity: .5;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container2 h4{
+    opacity: 0;
+    transform: translateY(60px);
+    animation: moving .7s linear forwards;
+}
+
+.container2 p{
+    width: 700px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.langs{
+    background: linear-gradient(to right, #faef8b, rgb(228, 11, 210));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container2 .btn-primary{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.c2-box{
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    background-color: rgba(58, 79, 109, 0.349);
+    margin-left: 150px;
+    border: solid 0.5px grey;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.c2-box .card{
+    width: 220px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgba(61, 83, 95, 0.397);
+}
+
+.card-body h5{
+    background:linear-gradient(to right,rgb(214, 212, 97), rgb(174, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+
+.card-body p{
+    color: lightgray;
+    margin-left: 20px;
+}
+
+.c2-box .card:hover{
+    cursor: pointer;
+    background-color: rgba(70, 34, 153, 0.486);
+}
+
+.container3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #020617;
+}
+
+.container3 h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container3 p{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.card2 .card-img-top{
+    border-radius: 5px;
+}
+
+.project1{
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+.project2{
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+.project3{
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+.project4{
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.card2 h5{
+    color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card2 p{
+    color: lightgray;
+    font-size: 14px;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover{
+    cursor: pointer;
+    background:linear-gradient(to right, black, dodgerblue);
+    box-shadow: 0 10px 10px rgba(30, 144, 255, 0.7);
+    transition: all .5s;
+    transform: scale(1.05);
+}
+
+.container4{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #020617;
+}
+
+.container4 h1{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.container4 p{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.process{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.process1, .process2, .process3{
+    border: solid 1px #30323dde;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card3 h5{
+    color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card3 p{
+    color: lightgray;
+    font-size: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.process1:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(10, 10, 139, 0.658), rgb(165, 3, 165));
+    box-shadow: 0 10px 10px rgba(10, 10, 139, 0.658);
+}
+
+.process2:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(101, 3, 121), rgba(141, 5, 84, 0.658));
+    box-shadow: 0 10px 10px rgb(101, 3, 121);
+}
+
+.process3:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(3, 46, 163), rgb(214, 4, 127));
+    box-shadow: 0 10px 10px rgb(3, 46, 163);
+}
+
+.container5{
+    width: 100%;
+    min-height: 60vh;
+    background-color: #020617;
+}
+
+.container5 h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container5 p{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card4{
+    margin-left: 480px;
+}
+
+.card4 p{
+    color: lightgray;
+    font-size: 15px;
+    width: 360px;
+}
+
+.card4 a{
+    margin-left: 140px;
+}
+
+.container6{
+    width: 100%;
+    min-height: 120vh;
+    background-color: #020617;
+}
+
+.container6 h2{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container6 p{
+    color: white;
+    text-align: center;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 800px;
+}
+
+.contact{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.send-btn {
+    background: linear-gradient(to right, dodgerblue, black);
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 800px;
+}
+
+.resume-btn {
+    background-color: #020617 !important;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 340px;
+    border-radius: 20px !important;
+}
+
+.footer{
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #000311;
+    padding-left: 400px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.f1 li{
+    list-style: none;
+    color: white;
+}
+
+.f1 li:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.f2 h5{
+    color: white;
+}
+.f2 li{
+    list-style: none;
+    color: white;
+}
+
+.icons img:hover{
+    cursor: pointer;
+}
+
+.f1 li a {
+    text-decoration: none;     
+    color: white;          
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.f1 li a:hover {
+    color: gold;    
+    text-decoration: none;   
+    cursor: pointer;
+}
+
+.footer-bottom{
+    color: lightslategray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-left: 60px;
+    margin-right: 70px;
+    margin-top: 20px;
+}
